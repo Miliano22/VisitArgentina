@@ -11,7 +11,7 @@ header {
     padding: 10px;
   }
 
-  .logo{
+.logo{
     display: flex;
     align-items: center;
     background: #3010a3;
@@ -19,37 +19,37 @@ header {
     transition-delay: 1s;
   }
 
-  .logo:hover{
+.logo:hover{
     transform: scale(2);
     transition-delay: 1s;
 
   }
   
-  .logo img{
+.logo img{
     height: 80px;
     margin-right: 10px;
   }
-  
-  nav {
+
+nav {
     float: right;
   }
-  nav ul {
+nav ul {
     list-style: none;
     overflow: hidden; 
   }
   
-  nav ul li {
+nav ul li {
     float: left;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
   }
-  nav ul li a {
+nav ul li a {
     display: block;
     padding: 10px;
     color: rgb(243, 232, 232);
     text-decoration: none;
   }
-  nav ul li:hover {
+nav ul li:hover {
     background: #070707;
   }
 /* Imagenes portada */
@@ -62,7 +62,6 @@ header {
 }
 
 /* Estilos generales */
-
 a{
   font-size: 20px;
   color: aliceblue;
@@ -84,7 +83,6 @@ h3{
 body{
     background: rgb(16,63,156);
     background: radial-gradient(circle, rgba(16,63,156,1) 22%, rgba(21,17,34,1) 57%);
-  
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -97,6 +95,10 @@ body{
     color: aliceblue;
     font-size: 20px;
     text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Animaciones*/
@@ -127,6 +129,7 @@ body{
   height: 2px;
   background: linear-gradient(270deg, transparent,#a7a4a8);
 }
+
 .btn-neon:hover #span3{
   right: 100%;
   transition: 1s;
@@ -280,7 +283,10 @@ footer{
     grid-column-start: span 2;
 }
 
+/* Responsive */
 @media (min-width:768px){
+
+  
   .gallery-container{
     grid-template-columns: repeat(4, 1fr);
     }
@@ -309,7 +315,7 @@ footer{
     grid-template-columns: repeat(5, 1fr);
     width: 90%;
     margin: auto;
-    }
+  }
 
   .gallery__item:nth-child(3){
       grid-column-start: span 2;
@@ -327,5 +333,18 @@ footer{
   }
   .gallery__item:nth-child(8){
     grid-column-start: span 2;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .portada img{
+    width: 500px;
+  }
+  .texto{
+    width: 500px;
+  }
+.container{
+  width: 300px;
 }
 }
